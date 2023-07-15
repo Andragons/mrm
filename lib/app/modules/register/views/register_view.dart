@@ -156,12 +156,12 @@ class RegisterView extends GetView<RegisterController> {
                                 email, password, confirmPassword);
                           },
                           style: ElevatedButton.styleFrom(
-                              backgroundColor: Colors.orange,
+                              backgroundColor: Color.fromARGB(255, 40, 43, 236),
                               elevation: 5,
                               shape: new RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(30),
                               ),
-                              padding: EdgeInsets.all(20)),
+                              padding: EdgeInsets.all(10)),
                           child: Text('REGISTER'),
                         );
                       }))

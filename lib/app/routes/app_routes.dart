@@ -15,6 +15,7 @@ abstract class Routes {
   static const MAKANAN = _Paths.MAKANAN;
   static const PROFILE = _Paths.PROFILE;
   static const USER = _Paths.USER;
+  static const HISTORY = _Paths.HISTORY; // Tambahkan rute untuk History
 }
 
 abstract class _Paths {
@@ -31,4 +32,5 @@ abstract class _Paths {
   static const MAKANAN = '/makanan';
   static const PROFILE = '/profile';
   static const USER = '/user';
+  static const HISTORY = '/history'; // Tambahkan path untuk History
 }

@@ -20,12 +20,20 @@ class VerifyOtpView extends GetView<VerifyOtpController> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Text(
-                "Verifikasi Akun Anda",
+                "Verifi Your Account",
                 textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Color.fromRGBO(96, 97, 250, 1)),
+              ),
+              Image.asset(
+                "assets/otp.png",
+                width: 300,
+                height: 300,
               ),
               Text(
-                "Masukan kode OTP pada Email Anda",
+                "Input OTP code from your Email!",
                 style: TextStyle(fontSize: 20),
               ),
               SizedBox(

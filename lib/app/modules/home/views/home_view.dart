@@ -13,59 +13,68 @@ class HomeView extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              "Welcome",
-              textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-            ),
-            Image.asset(
-              "assets/loginHero.png",
-              width: 300,
-              height: 300,
-            ),
-            SizedBox(
-              height: 50,
-              width: 50,
-            ),
-            SizedBox(
-                height: 60,
+      body: Center(
+        // Tambahkan widget Center di sini
+        child: Container(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Text(
+                "Welcome in FilmVibe Apps",
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
+              Image.asset(
+                "assets/cinema.jpg",
+                width: 300,
+                height: 300,
+              ),
+              SizedBox(
+                height: 50,
+                width: 50,
+              ),
+              SizedBox(
+                height: 40,
                 width: 300,
                 child: ElevatedButton(
-                    onPressed: () {
-                      Get.offAllNamed(Routes.LOGIN);
-                    },
-                    style: ElevatedButton.styleFrom(
-                        backgroundColor: Color.fromARGB(255, 0, 183, 255),
-                        elevation: 5,
-                        shape: new RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(30),
-                        ),
-                        padding: EdgeInsets.all(20)),
-                    child: Text('LOGIN'))),
-            SizedBox(
-              height: 10,
-              width: 10,
-            ),
-            SizedBox(
-                height: 60,
+                  onPressed: () {
+                    Get.offAllNamed(Routes.LOGIN);
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Color.fromRGBO(96, 97, 250, 1),
+                    elevation: 5,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30),
+                    ),
+                    padding: EdgeInsets.all(10),
+                  ),
+                  child: Text('LOGIN'),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+                width: 10,
+              ),
+              SizedBox(
+                height: 40,
                 width: 300,
                 child: ElevatedButton(
-                    onPressed: () {
-                      Get.offAllNamed(Routes.REGISTER);
-                    },
-                    style: ElevatedButton.styleFrom(
-                        backgroundColor: Color.fromARGB(255, 0, 183, 255),
-                        elevation: 5,
-                        shape: new RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(30),
-                        ),
-                        padding: EdgeInsets.all(20)),
-                    child: Text('REGISTER')))
-          ],
+                  onPressed: () {
+                    Get.offAllNamed(Routes.REGISTER);
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Color.fromRGBO(96, 97, 250, 1),
+                    elevation: 5,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30),
+                    ),
+                    padding: EdgeInsets.all(10),
+                  ),
+                  child: Text('REGISTER'),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

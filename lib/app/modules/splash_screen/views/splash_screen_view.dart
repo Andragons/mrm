@@ -21,7 +21,7 @@ class SplashScreenView extends GetView<SplashScreenController> {
             width: 200,
             child: Image.asset("assets/projektor.gif"),
           ),
-          defaultNextScreen: LoginView(),
+          defaultNextScreen: HomeView(),
         ),
       ),
     );

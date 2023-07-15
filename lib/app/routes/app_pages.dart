@@ -4,6 +4,8 @@ import '../modules/dashboard/bindings/dashboard_binding.dart';
 import '../modules/dashboard/views/dashboard_view.dart';
 import '../modules/forgot/bindings/forgot_binding.dart';
 import '../modules/forgot/views/forgot_view.dart';
+import '../modules/history/bindings/history_binding.dart';
+import '../modules/history/views/history_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/info/bindings/info_binding.dart';
@@ -54,7 +56,7 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.DASHBOARD,
-      page: () => const DashboardView(),
+      page: () => DashboardView(),
       binding: DashboardBinding(),
     ),
     GetPage(
@@ -86,6 +88,11 @@ class AppPages {
       name: _Paths.USER,
       page: () => UserView(),
       binding: UserBinding(),
+    ),
+    GetPage(
+      name: _Paths.HISTORY, // Tambahkan rute untuk History
+      page: () => HistoryView(),
+      binding: HistoryBinding(),
     ),
   ];
 }

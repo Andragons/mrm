@@ -16,25 +16,25 @@ class LoginView extends GetView<LoginController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   backgroundColor: Colors.transparent,
-      //   elevation: 0,
-      //   leading: IconButton(
-      //     color: Colors.black,
-      //     icon: Icon(Icons.arrow_back),
-      //     onPressed: () {
-      //       Get.offAllNamed(Routes.HOME);
-      //     },
-      //   ),
-      // ),
-      // resizeToAvoidBottomInset: false,
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        leading: IconButton(
+          color: Colors.black,
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Get.offAllNamed(Routes.HOME);
+          },
+        ),
+      ),
+      resizeToAvoidBottomInset: false,
       body: Container(
         padding: EdgeInsets.all(20),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              "Welcome",
+              "Login",
               textAlign: TextAlign.center,
               style: TextStyle(
                   fontSize: 30, color: Color.fromRGBO(96, 97, 250, 1)),
@@ -49,7 +49,7 @@ class LoginView extends GetView<LoginController> {
               width: 10,
             ),
             Image.asset(
-              "assets/loginHero.png",
+              "assets/loginHeromin.png",
               width: 300,
               height: 300,
             ),
